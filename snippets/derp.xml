@@ -3,7 +3,11 @@
 
   <remote  name="github"
            fetch="https://github.com/" />
-
+  
+   <remote  name="israfil"
+           fetch="https://github.com/israfilbd"
+           revision="14" />
+  
   <remote  name="gitlab"
            fetch="https://gitlab.com/" />
 
@@ -72,7 +76,7 @@
   <project path="external/zstd" name="external_zstd" remote="derp" />
 
   <project path="frameworks/av" name="frameworks_av" groups="pdk" remote="derp" />
-  <project path="frameworks/base" name="frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="derp" />
+  <project path="frameworks/base" name="frameworks_base_derp" groups="pdk-cw-fs,pdk-fs" remote="israfil" />
   <project path="frameworks/libs/systemui" name="frameworks_libs_systemui" groups="pdk-cw-fs,pdk-fs" remote="derp" />
   <project path="frameworks/native" name="frameworks_native" groups="pdk" remote="derp" />
   <project path="frameworks/opt/colorpicker" name="frameworks_opt_colorpicker" groups="pdk-cw-fs,pdk-fs" remote="derp" />
@@ -154,7 +158,7 @@
 
   <!-- Packages -->
   <project path="packages/apps/DerpLauncher" name="packages_apps_DerpLauncher" groups="pdk-fs" remote="derp" />
-  <project path="packages/apps/DerpSpace" name="packages_apps_DerpSpace" groups="pdk-fs" remote="derp" />
+  <project path="packages/apps/DerpSpace" name="packages_apps_DerpSpace" groups="pdk-fs" remote="israfil" />
   <project path="packages/apps/DerpWalls" name="packages_apps_DerpWalls" groups="pdk-fs" remote="derp" />
   <project path="packages/apps/Flash" name="packages_apps_Flash" groups="pdk-fs" remote="derp" />
   <project path="packages/apps/FlipFlap" name="packages_apps_FlipFlap" groups="pdk-fs" remote="derp" />
@@ -165,7 +169,7 @@
   <project path="packages/apps/ParanoidSense" name="packages_apps_ParanoidSense" remote="derp" />
   <project path="packages/apps/Prospect" name="packages_apps_Prospect" remote="derp" />
   <project path="packages/apps/Ripple" name="packages_apps_Ripple" groups="pdk-fs" remote="derp" />
-  <project path="packages/apps/Settings" name="packages_apps_Settings" groups="pdk-fs" remote="derp" />
+  <project path="packages/apps/Settings" name="packages_apps_Settings_derp" groups="pdk-fs" remote="israfil" />
   <project path="packages/apps/SettingsIntelligence" name="packages_apps_SettingsIntelligence" groups="pdk-fs" remote="derp" />
   <project path="packages/apps/SimpleDeviceConfig" name="ProtonAOSP/android_packages_apps_SimpleDeviceConfig" groups="pdk-fs" remote="github" revision="sc-qpr3" />
   <project path="packages/apps/ThemePicker" name="packages_apps_ThemePicker" groups="pdk-fs" remote="derp" />
@@ -204,11 +208,11 @@
 
   <!-- Vendor -->
   <project path="vendor/codeaurora/telephony" name="vendor_codeaurora_telephony" groups="qcom,qssi" remote="derp" />
-  <project path="vendor/derp" name="vendor_derp" remote="derp">
+  <project path="vendor/derp" name="vendor_derp" remote="israfil">
     <linkfile src="build/stop_scan.mk" dest="kernel/Android.mk" />
   </project>
   <project path="vendor/fontage" name="vendor_fontage" remote="derp" />
-  <project path="vendor/gms" name="DerpFest/vendor_gms" remote="gitlab" revision="14" clone-depth="1" />
+  <project path="vendor/gms" name="israfil/vendor_gms" remote="gitlab" revision="14" clone-depth="1" />
   <project path="vendor/overlay" name="vendor_overlay" remote="derp" />
   <project path="vendor/pixel-framework" name="vendor_pixel-framework" remote="derp" />
   <project path="vendor/qcom/opensource/audio-hal/st-hal" name="vendor_qcom_opensource_audio-hal_st-hal" groups="qcom,lahaina" remote="derp" />
